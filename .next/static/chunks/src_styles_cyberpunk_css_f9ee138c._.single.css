@@ -1,0 +1,73 @@
+/* [project]/src/styles/cyberpunk.css [app-client] (css) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #0000004d;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(#0ff, #0f0);
+  border-radius: 4px;
+  box-shadow: 0 0 10px #00ffff80;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#0f0, #0ff);
+  box-shadow: 0 0 15px #00ff00b3;
+}
+
+.cyber-glow {
+  box-shadow: 0 0 20px #00ff004d;
+}
+
+.cyber-glow:hover {
+  box-shadow: 0 0 30px #00ff0080;
+}
+
+.neon-text {
+  text-shadow: 0 0 5px, 0 0 10px, 0 0 15px, 0 0 20px;
+}
+
+@keyframes matrix {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.matrix-bg:before {
+  content: "";
+  pointer-events: none;
+  z-index: -1;
+  background-image: linear-gradient(90deg, #0000 98%, #00ff0008 100%), linear-gradient(#0000 98%, #00ff0008 100%);
+  background-size: 50px 50px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 5px;
+  }
+
+  50% {
+    opacity: .5;
+    box-shadow: 0 0 20px;
+  }
+}
+
+.pulse-glow {
+  animation: 2s ease-in-out infinite pulse-glow;
+}
+
+/*# sourceMappingURL=src_styles_cyberpunk_css_f9ee138c._.single.css.map*/
